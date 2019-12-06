@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+    <body>
+
+        <nav class="masternavbar">           
+            <a class="navbar-name"><h4>Quiz</h4></a>            
+        </nav>
+        <h1></h1>
+        
+        <div class="quiz_wrapper">
+            <div class="question" id="questionBox">
+                HTML stands for?
+            </div>
+            <div class="options">
+                <ul id="ul">
+                    <li id="op1" onclick="button(this)"></li>
+                    <li id="op2" onclick="button(this)"></li>
+                    <li id="op3" onclick="button(this)"></li>
+                    <li id="op4" onclick="button(this)"></li>
+                </ul>
+            </div>
+            <div class="nextbtn">
+                <div class="next">
+                    <button class="btn btn-primary" type="button" onclick="next()" id="button" style="background-color: cornflowerblue;">Next</button>
+                    
+                </div>
+                <div class="score-card">
+                    Score : <span id="scoreCard">0</span>
+                    <input onclick="reset()" id="reset" class="btn btn-primary" type="reset" value="Reset" style="background-color: cornflowerblue; display:none;">
+                </div>
+            </div>
+        </div>
+        
+        
+     
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+     <script src="quiz.js"></script>     
+       
+    </body>
+</html>
